@@ -36,7 +36,7 @@ Algoritmo main
 						__validado = Verdadero
 					FinSi
 					Si __genero <> "H" y __genero <> "h" y __genero <> "M" y __genero <> "m" Entonces
-						Escribir "El genero ingresado no es valido"
+						Escribir "ERROR: El genero ingresado no es valido"
 						__validado = Falso
 					FinSi
 				FinMientras
@@ -56,7 +56,7 @@ Algoritmo main
 						FinSi
 						__validado = Verdadero
 					SiNo
-						Escribir "La nota ingresada no es valida"
+						Escribir "ERROR: La nota ingresada no es valida"
 					FinSi
 				FinMientras
 				
@@ -73,7 +73,7 @@ Algoritmo main
 						FinSi
 						__validado = Verdadero
 					SiNo
-						Escribir "La edad ingresada no es valida"
+						Escribir "ERROR: La edad ingresada no es valida"
 						__validado = Falso
 					FinSi
 				FinMientras
@@ -82,7 +82,7 @@ Algoritmo main
 			Caso, "NO", "no", "No", "nO":
 				__continuar = Falso
 			De Otro Modo:
-				Escribir "La opcion seleccionada no es valida"
+				Escribir "ERROR: La opcion seleccionada no es valida"
 		FinSegun
 	FinMientras
 	
